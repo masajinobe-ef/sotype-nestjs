@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <script src="/dist/client/chat-client.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Чат</h1>
+      <div id="chat-container" class="chat-container" style="display: none">
+        <div id="messages" class="messages"></div>
+        <div class="input-container">
+          <input
+            id="message"
+            class="message-input"
+            placeholder="Введите сообщение"
+          />
+          <button id="send" class="send-button">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
