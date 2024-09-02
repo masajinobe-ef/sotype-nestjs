@@ -3,7 +3,7 @@
 run() {
     echo "Starting the NestJS server..."
 
-    nest start --watch &
+    yarn run start:dev
     SERVER_PID=$!
 
     echo "Server started with PID $SERVER_PID."
