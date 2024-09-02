@@ -5,11 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
     <script src="/dist/client/chat-client.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 400px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .chat-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .messages {
+        flex-grow: 1;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+        height: 300px;
+        overflow-y: auto;
+        background-color: #fafafa;
+      }
+      .input-container {
+        display: flex;
+      }
+      .message-input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      .send-button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+      .send-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1>Чат</h1>
-      <div id="chat-container" class="chat-container" style="display: none">
+      <div id="chat-container" class="chat-container">
         <div id="messages" class="messages"></div>
         <div class="input-container">
           <input
