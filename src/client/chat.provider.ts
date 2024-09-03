@@ -12,7 +12,7 @@ interface CustomSocket extends Socket {
 }
 
 @WebSocketGateway()
-export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
+export class ChatProvider implements OnGatewayConnection, OnGatewayDisconnect {
   @WebSocketServer() server: Server;
   private connectedUsers: CustomSocket[] = [];
   private userCount = 0;
